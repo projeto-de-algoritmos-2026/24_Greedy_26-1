@@ -1,0 +1,10 @@
+[
+  { "nome": "Cálculo 1",                  "cor": "#6366f1", "dias": ["seg", "qua"], "inicio": "10:00", "fim": "12:00" },
+  { "nome": "Introdução à Programação",   "cor": "#f43f5e", "dias": ["ter", "qui"], "inicio": "10:00", "fim": "12:00" },
+  { "nome": "Física 1",                   "cor": "#10b981", "dias": ["seg", "qua"], "inicio": "14:00", "fim": "16:00" },
+  { "nome": "Álgebra Linear",             "cor": "#f59e0b", "dias": ["ter", "qui"], "inicio": "14:00", "fim": "16:00" },
+  { "nome": "Estruturas de Dados",        "cor": "#8b5cf6", "dias": ["seg", "qua"], "inicio": "16:00", "fim": "18:00" },
+  { "nome": "Banco de Dados",             "cor": "#06b6d4", "dias": ["ter", "qui"], "inicio": "16:00", "fim": "18:00" },
+  { "nome": "Probabilidade",              "cor": "#ec4899", "dias": ["seg"],        "inicio": "10:30", "fim": "12:30" },
+  { "nome": "Org. Computadores",          "cor": "#84cc16", "dias": ["seg"],        "inicio": "11:00", "fim": "13:00" }
+]
