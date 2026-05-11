@@ -59,7 +59,7 @@ Ctrl + C
 </p>
 
 <p align="center">
-  <a href="https://youtu.be/GBx2gQw55AY" target="_blank">
-    <img src="colocar aqui" alt="Assista ao vídeo de apresentação no YouTube" width="800">
+  <a href="https://www.youtube.com/watch?v=LhEfwjkVxZU" target="_blank">
+    <img src="https://www.youtube.com/watch?v=LhEfwjkVxZU" alt="Assista ao vídeo de apresentação no YouTube" width="800">
   </a>
 </p>
