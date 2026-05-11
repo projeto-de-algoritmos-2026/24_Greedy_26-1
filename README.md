@@ -1,4 +1,4 @@
-# Greedy_Interval_Partition_Grade
+# Greedy_IntervalPartition_GraDias
 
 **Número da Lista**: 24<br>
 **Conteúdo da Disciplina**: Algoritmos Gulosos<br>
