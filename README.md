@@ -1,4 +1,4 @@
-# Greedy_IntervalPartition_GraDias
+# Greedy_GraDias
 
 **Número da Lista**: 24<br>
 **Conteúdo da Disciplina**: Algoritmos Gulosos<br>
@@ -24,7 +24,7 @@ O programa recebe uma lista de aulas (intervalos) e utiliza uma abordagem gulosa
 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/projeto-de-algoritmos-2026/G24_Greedy_PA-26.1.git
+git clone https://github.com/projeto-de-algoritmos-2026/24_Greedy_GraDias.git
 cd G24_Greedy_PA-26.1
 ```
 
