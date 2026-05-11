@@ -1,23 +1,6 @@
-// ═══════════════════════════════
-// algoritmo.js — Algoritmo Greedy: Interval Partition
-// ═══════════════════════════════
-// Depende de: data.js (DIAS_NOMES), utils.js (minutesToTime)
-
-/**
- * Executa o algoritmo Interval Partition em um conjunto de intervalos
- * de um mesmo dia.
- *
- * Estratégia gulosa: ordena por horário de início e tenta alocar
- * cada intervalo na primeira coluna cujo último intervalo já terminou.
- * Se nenhuma coluna está livre, cria uma nova (= conflito).
- *
- * @param {Array} intervalosDoDia - intervalos já expandidos de um dia
- * @returns {{ numColunas: number, conflitos: number, log: Array }}
- */
 function intervalPartition(intervalosDoDia) {
   var log = [];
 
-  // Ordena por horário de início (greedy: earliest start first)
   intervalosDoDia.sort(function (a, b) {
     if (a.inicioMin !== b.inicioMin) return a.inicioMin - b.inicioMin;
     return a.fimMin - b.fimMin;
@@ -25,7 +8,7 @@ function intervalPartition(intervalosDoDia) {
 
   log.push({ text: 'Ordenando intervalos por horário de início...', type: 'header' });
 
-  var colunas = [];   // colunas[c] = horário de fim do último intervalo alocado na coluna c
+  var colunas = []; 
   var conflitos = 0;
 
   for (var i = 0; i < intervalosDoDia.length; i++) {
@@ -37,7 +20,6 @@ function intervalPartition(intervalosDoDia) {
       type: 'header'
     });
 
-    // Tenta alocar em uma coluna existente cuja última aula já terminou
     for (var c = 0; c < colunas.length; c++) {
       if (colunas[c] <= intervalo.inicioMin) {
         colunas[c] = intervalo.fimMin;
@@ -52,7 +34,6 @@ function intervalPartition(intervalosDoDia) {
       }
     }
 
-    // Nenhuma coluna livre → cria nova (conflito se já existe pelo menos uma)
     if (!alocado) {
       colunas.push(intervalo.fimMin);
       intervalo.coluna = colunas.length - 1;

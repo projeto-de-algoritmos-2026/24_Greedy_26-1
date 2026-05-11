@@ -1,7 +1,3 @@
-// ═══════════════════════════════
-// estado.js — Estado global compartilhado entre módulos
-// ═══════════════════════════════
-
 var estado = {
   disciplinas: [],
   resultado: null,

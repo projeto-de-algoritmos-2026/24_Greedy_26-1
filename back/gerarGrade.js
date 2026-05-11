@@ -1,12 +1,3 @@
-// ═══════════════════════════════
-// gerarGrade.js — Orquestração: expande disciplinas + executa o algoritmo
-// ═══════════════════════════════
-// Depende de: data.js, utils.js, algoritmo.js, estado.js
-
-/**
- * Expande uma lista de disciplinas (cada uma com N dias)
- * em N intervalos individuais.
- */
 function expandirDisciplinas(discs) {
   var intervalos = [];
   for (var i = 0; i < discs.length; i++) {
@@ -29,10 +20,6 @@ function expandirDisciplinas(discs) {
   return intervalos;
 }
 
-/**
- * Gera a grade completa: expande disciplinas, agrupa por dia,
- * executa Interval Partition em cada dia e salva no estado.
- */
 function gerarGrade() {
   if (estado.disciplinas.length === 0) return;
 
@@ -41,7 +28,6 @@ function gerarGrade() {
   var totalConflitos = 0;
   var maxColunas = 0;
 
-  // Agrupar intervalos por dia
   var porDia = {};
   for (var i = 0; i < DIAS.length; i++) {
     porDia[DIAS[i]] = [];
@@ -50,7 +36,6 @@ function gerarGrade() {
     porDia[todosIntervalos[j].dia].push(todosIntervalos[j]);
   }
 
-  // Processar cada dia separadamente com Interval Partition
   for (var d = 0; d < DIAS.length; d++) {
     var dia = DIAS[d];
     var intervalosDia = porDia[dia];
@@ -71,7 +56,6 @@ function gerarGrade() {
     if (res.numColunas > maxColunas) maxColunas = res.numColunas;
   }
 
-  // Resumo final no log
   logs.push({ text: '', type: 'separator' });
   logs.push({ text: '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', type: 'separator' });
   logs.push({ text: 'Resultado Final', type: 'result' });

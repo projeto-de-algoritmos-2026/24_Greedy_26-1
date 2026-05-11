@@ -1,12 +1,4 @@
-// ═══════════════════════════════
-// render/listaDisciplinas.js — Renderiza a lista lateral de disciplinas
-// ═══════════════════════════════
-// Depende de: estado.js
 
-/**
- * Redesenha a lista de disciplinas na sidebar.
- * Lê diretamente do estado.disciplinas.
- */
 function renderizarListaDisciplinas() {
   var $listaDisciplinas = document.getElementById('lista-disciplinas');
   var $emptyLista = document.getElementById('empty-lista');

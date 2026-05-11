@@ -1,12 +1,3 @@
-// ═══════════════════════════════
-// render/painelResumo.js — Renderiza o painel de resumo estatístico
-// ═══════════════════════════════
-// Depende de: estado.js
-
-/**
- * Atualiza o painel de resumo com os dados do resultado.
- * Esconde o painel se não houver resultado.
- */
 function renderizarResumo() {
   var $cardResumo = document.getElementById('card-resumo');
   var $resumoDisc = document.getElementById('resumo-disciplinas');
